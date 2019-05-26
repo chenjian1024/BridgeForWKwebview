@@ -1,0 +1,6 @@
+# BridgeForWKwebview
+桥接H5和WKwebview
+通过注入隐藏的iframe注入js代码
+js代码包含hander的注入和回调
+js调用native同一转换成为统一格式的自定义的消息url 通过wkwebview的代理方法触发本地代码
+native调用js是将调用的hander序列化成为一个自定义的标准的消息体 作为js函数的参数 调用js注入时定义的方法
